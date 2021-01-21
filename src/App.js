@@ -49,7 +49,9 @@ function App() {
     <div className="App">
       <header className="App-header">Random user Fetcher</header>
 
-      <UserContainer response={response} />
+      {response.data.results.map((current) => {
+        return <UserContainer user={current} />;
+      })}
 
       <FetchUserButton getNewUser={getNewUser} />
     </div>

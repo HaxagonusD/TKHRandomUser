@@ -1,5 +1,5 @@
 const axios = require("axios");
-const baseURL = "https://api.randomuser.me/";
+const baseURL = "https://randomuser.me/api/?results=100";
 
 const fetchUser = async () => {
   try {
